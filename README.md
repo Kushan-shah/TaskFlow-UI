@@ -3,8 +3,14 @@
 ## Overview
 A modern, AI-augmented task management dashboard built with **React**, **Vite**, and **Tailwind CSS/CSS3**. This application serves as the primary frontend client for the TaskFlow backend system, providing users with an intuitive, glassmorphic interface to manage their daily workflows, analyze task priorities, and seamlessly integrate with Google Gemini AI for automated task insights.
 
-## Live Demo
-- **Vercel Deployment:** [*(Insert Vercel URL Here)*](#)
+## 🌐 Live Deployments & Cross-Repository Links
+
+This project is built as a fully decoupled microservice architecture.
+
+- **Frontend Application (Live):** [https://taskflow-ui-two.vercel.app/](https://taskflow-ui-two.vercel.app/)
+- **Frontend Source Code:** [https://github.com/Kushan-shah/TaskFlow-UI](https://github.com/Kushan-shah/TaskFlow-UI)
+- **Backend API (Swagger Docs):** [https://task-manager-api-live.onrender.com/swagger-ui/index.html#/](https://task-manager-api-live.onrender.com/swagger-ui/index.html#/)
+- **Backend Source Code:** [https://github.com/Kushan-shah/TaskFlow-AI](https://github.com/Kushan-shah/TaskFlow-AI)
 
 ## Key Features
 - **Context API State Management:** Seamless global state handling for Authentication (`AuthContext`) and Toast Notifications (`ToastContext`), minimizing prop drilling.
