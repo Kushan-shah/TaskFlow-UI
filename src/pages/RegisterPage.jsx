@@ -44,7 +44,7 @@ export default function RegisterPage() {
       addToast('Account created successfully!', 'success');
       navigate('/dashboard', { state: { email } });
     } catch (err) {
-      setError(err.message || err.response?.data?.message || 'Registration failed');
+      setError(err.response?.data?.message || err.message || 'Registration failed');
     } finally {
       setLoading(false);
     }

@@ -5,7 +5,7 @@ A modern, AI-augmented task management dashboard built with **React**, **Vite**,
 
 ## 🌐 Live Deployments & Cross-Repository Links
 
-This project is built as a fully decoupled microservice architecture.
+This project is built as a fully decoupled frontend-backend architecture (service-oriented).
 
 - **Frontend Application (Live):** [https://taskflow-ui-two.vercel.app/](https://taskflow-ui-two.vercel.app/)
 - **Frontend Source Code:** [https://github.com/Kushan-shah/TaskFlow-UI](https://github.com/Kushan-shah/TaskFlow-UI)
@@ -20,6 +20,15 @@ This project is built as a fully decoupled microservice architecture.
 - **AI Analytics Dashboard:** Real-time data visualization of task completion states using `Recharts`.
 - **Dynamic AI Insights:** Seamless integration with the TaskFlow AI endpoints, featuring custom Shimmer loading states while waiting for LLM inference.
 - **Optimized Network Layer:** Centralized API request handling using `Axios` interceptors with automatic 401 unauthenticated redirect handling.
+
+## ⚡ Performance Optimizations
+- Component-level memoization using `React.memo` and `useCallback` to prevent unnecessary re-renders.
+- Lazy-loading of module bundles using `React.lazy` and `Suspense` for lightning-fast initial load times.
+
+## 🛡️ Error Handling & Resilience
+- Centralized API error handling via global Axios interceptors.
+- Graceful UI fallback states for failed API responses, preventing white-screen crashes.
+- Designed to remain responsive even under delayed backend AI responses through non-blocking UI patterns.
 
 ## System Architecture
 
