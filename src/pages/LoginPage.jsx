@@ -30,7 +30,13 @@ export default function LoginPage() {
       addToast('Welcome back!', 'success');
       navigate('/dashboard');
     } catch (err) {
-      setError(err.response?.data?.message || 'Invalid credentials');
+      if (err.code === 'ECONNABORTED' || err.message.includes('timeout')) {
+        setError('Server is taking too long to respond. Please check if your database/backend is running.');
+      } else if (!err.response) {
+        setError('Network Error: Cannot connect to backend server on port 8080.');
+      } else {
+        setError(err.response?.data?.message || 'Invalid credentials');
+      }
     } finally {
       setLoading(false);
     }
