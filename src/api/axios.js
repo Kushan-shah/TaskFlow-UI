@@ -24,12 +24,12 @@ api.interceptors.response.use(
 
     // ACTIVE FAILOVER: If AWS (Primary) fails due to Gateway Timeout or Server Crash, pivot to Render
     if (
-      !originalConfig._retry && 
+      !originalConfig._retry &&
       (err.message === 'Network Error' || err.response?.status >= 500 || err.code === 'ECONNABORTED')
     ) {
       originalConfig._retry = true; // Prevent infinite failover loops
       originalConfig.baseURL = RENDER_FALLBACK_URL;
-      
+
       console.warn(`[Failover Activated] AWS Backend failed (${err.message}). Pivoting to Render Fallback...`);
       // Retry the exact same request seamlessly against Render
       return api(originalConfig);
@@ -41,7 +41,7 @@ api.interceptors.response.use(
       localStorage.removeItem('user');
       window.location.href = '/login';
     }
-    
+
     return Promise.reject(err);
   }
 );
