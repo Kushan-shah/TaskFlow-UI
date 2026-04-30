@@ -1,0 +1,32 @@
+TaskFlow AI — Smart Task Manager (Frontend)
+Copyright 2024-2026 Kushan Shah
+
+This product includes software developed by Kushan Shah
+(https://github.com/Kushan-shah).
+
+========================================================================
+Third-Party Notices
+========================================================================
+
+This project uses the following open-source libraries:
+
+React (https://react.dev/)
+  Licensed under the MIT License
+
+React DOM (https://react.dev/)
+  Licensed under the MIT License
+
+React Router (https://reactrouter.com/)
+  Licensed under the MIT License
+
+Axios (https://axios-http.com/)
+  Licensed under the MIT License
+
+Recharts (https://recharts.org/)
+  Licensed under the MIT License
+
+Vite (https://vitejs.dev/)
+  Licensed under the MIT License
+
+ESLint (https://eslint.org/)
+  Licensed under the MIT License
